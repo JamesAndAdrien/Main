@@ -1,5 +1,6 @@
 package gameLoop;
 
+
 public class GameLoop {
 
 	public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class GameLoop {
 		
 		y = 0;
 		
-		z = 10000;
+		z = 1000000;
 		
 		while (game == true) {
 			
@@ -32,13 +33,13 @@ public class GameLoop {
 		
 			}	
 			
-			Entity[1] = x;
+			Entity[0] = x;
 		
-			Entity[2] = y;
+			Entity[1] = y;
 		
-			Entity[3] = z;
+			Entity[2] = z;
 		
-			System.out.println("Position: " + Entity[1] + "," + Entity[2] + "," + Entity[3]);
+			System.out.println("Position: " + Entity[0] + "," + Entity[1] + "," + Entity[2]);
 			
 		}
 		
@@ -46,10 +47,4 @@ public class GameLoop {
 	}
 	
 }
-
-/*How is this throwing an error??
- *
- *Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
- *at gameLoop.GameLoop.main(GameLoop.java:41)
- */
   
