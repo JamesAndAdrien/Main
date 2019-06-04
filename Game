@@ -1,0 +1,55 @@
+package gameLoop;
+
+public class GameLoop {
+
+	public static void main(String[] args) {
+		
+		//You think I have any idea what the fuck I'm doing?? LMAO
+		
+		//Alright fellas let's try to make some physics for an object?? I don't know...
+		
+		double[] Entity;
+		
+		Entity = new double[3];
+		
+		boolean game = true;
+		
+		double m, x, y, z;
+		
+		m = 10;
+		
+		x = 0;
+		
+		y = 0;
+		
+		z = 10000;
+		
+		while (game == true) {
+			
+			while (z > 0) {
+			
+				z = z - 0.5*m*9.8;
+		
+			}	
+			
+			Entity[1] = x;
+		
+			Entity[2] = y;
+		
+			Entity[3] = z;
+		
+			System.out.println("Position: " + Entity[1] + "," + Entity[2] + "," + Entity[3]);
+			
+		}
+		
+		
+	}
+	
+}
+
+/*How is this throwing an error??
+ *
+ *Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+ *at gameLoop.GameLoop.main(GameLoop.java:41)
+ */
+  
