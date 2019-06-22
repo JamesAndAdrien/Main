@@ -1,4 +1,4 @@
-package gameLoop;
+package gameloop;
 
 public class SpaceTime {
 	

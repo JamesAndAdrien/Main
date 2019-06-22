@@ -1,4 +1,4 @@
-package gameLoop;
+package gameloop;
 
 import graphics.Window;
 
@@ -6,25 +6,9 @@ public class GameLoop {
 	
 	private boolean isRunning;
 	
-	public static final int WIDTH = 1200;
-	
-	public static final int HEIGHT = 600;
-	
-	public static final String TITLE = "Game!";
-	
 	public static final double FRAMERATE_CAP = 120.0;
 	
 	private Game game;
-	
-	public static void main(String[] args) {
-		
-		Window.createWindow(WIDTH, HEIGHT, TITLE);
-		
-		GameLoop game = new GameLoop();
-		
-		game.start();
-		
-	}
 	
 	public void Main() {
 		
